@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Operacion</th>
+            <th scope="col">Numero 1</th>
+            <th scope="col">Numero 2</th>
+            <th scope="col">Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let history of listHistory">
+            <td>{{ history.operation }}</td>
+            <td>{{ history.number1 }}</td>
+            <td>{{ history.number2 }}</td>
+            <td>{{ history.enrollmentDate }}</td>
+
+        </tr>
+
+    </tbody>
+</table>
